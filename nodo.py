@@ -1,9 +1,12 @@
 #Clase nodo
 
 class Nodo:
+    tratado=False
+    lista = []
 
     def __init__(self,nombre):
         self.nom = nombre
+        #self.lista = []
     def norte(self):
         return self.nom[4:8]
     def este(self):
@@ -16,8 +19,10 @@ class Nodo:
             for e1 in range(e-1,e+2):
                 if (n1==n and e1==e)==False:
                     nom2 = "1kmN"+str(n)+"E"+str(e)
-                    lista.append(nom2)
-        return lista
+                    self.lista.append(nom2)
+        return self.lista
 
-
+    def tratar(self):
+        self.tratado = True
         
+    
