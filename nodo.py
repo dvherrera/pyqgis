@@ -22,7 +22,8 @@ class Nodo:
                     self.lista.append(nom2)
         return self.lista
 
+    def dime_nombre(self):
+        return self.nom
+
     def tratar(self):
         self.tratado = True
-        
-    
