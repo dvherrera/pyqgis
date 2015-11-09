@@ -17,8 +17,8 @@ class Nodo:
         e = int(self.este())
         for n1 in range(n-1,n+2):
             for e1 in range(e-1,e+2):
-                if (n1==n and e1==e)==False:
-                    nom2 = "1kmN"+str(n)+"E"+str(e)
+                if (n1!=n or e1!=e):
+                    nom2 = "1kmN"+str(n1)+"E"+str(e1)
                     self.lista.append(nom2)
         return self.lista
 
